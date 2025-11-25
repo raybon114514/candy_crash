@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffeaa7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.score-board {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+.grid {
+    width: 560px;
+    height: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.grid div {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* 圓形糖果 */
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.grid div:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
