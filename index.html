@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>簡易 Candy Crush</title>
+    <title>進階 Candy Crush</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="game-container">
+    <div class="game-wrap">
         <div class="score-board">
-            <h3>分數: <span id="score">0</span></h3>
+            <div class="stat-box">
+                <h3>分數</h3>
+                <span id="score">0</span>
+            </div>
+            <div class="stat-box">
+                <h3>剩餘步數</h3>
+                <span id="moves">20</span>
+            </div>
         </div>
         <div class="grid"></div>
+        <div id="game-over-message">遊戲結束!</div>
     </div>
 
     <script src="script.js"></script>
